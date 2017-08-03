@@ -4,7 +4,7 @@ There is a special block, the first block which stores the index of the next blo
 
 The program takes the following commands:
 
-INITIALIZE <N>:
+INITIALIZE N:
 This command is always called first and it initializez an arena with the size of N bytes.
 
 FINALIZE:
@@ -16,17 +16,17 @@ There are 16 bytes displayed on every line.
 At the beginning of the line is the current index followed by 16 bytes.
 The last line contains the size of the arena.
 
-ALLOC <SIZE>:
+ALLOC SIZE:
 This command allocates the first free space it finds from left to right, large enough to store SIZE bytes + 3 * sizeof(int) bytes worth of meta-data.
 
-FREE <INDEX>:
+FREE INDEX:
 This command will free the memory block whose user data begins at INDEX offset from the 'start' (beginning of the arena).
 
-FILL <INDEX> <SIZE> <VALUE>:
+FILL INDEX SIZE VALUE:
 This command will set SIZE consecutive bytes starting with the one at INDEX to the given VALUE.
 This command may corrupt the arena.
 
-SHOW <INFO>:
+SHOW INFO:
 	
 INFO can be:
 
