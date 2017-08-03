@@ -27,8 +27,12 @@ This command will set SIZE consecutive bytes starting with the one at INDEX to t
 This command may corrupt the arena.
 
 SHOW <INFO>:
+	
 INFO can be:
+
 	FREE: displays information about free memory in the arena;
+	
 	USAGE: displays information about usage such as the number of used bytes, utilization efficency and fragmentation;
+	
 	ALLOCATIONS: displays the free and allocated memory zones, one per line along with their size in bytes.
 
