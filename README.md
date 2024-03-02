@@ -1,3 +1,5 @@
+(Bachelor's homework)
+
 This is a simple memory allocator that stores information about the blocks right into them.
 A block stores: information about the next block, the previous block, the total size of the current block and the user data
 There is a special block, the first block which stores the index of the next block.
